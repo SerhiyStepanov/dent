@@ -13,7 +13,7 @@ export default function Navigation() {
   return (
     <>
       <div className={s.thumb}>
-        <Link exact to="/" className={s.iconLink}>
+        <Link to="/" className={s.iconLink}>
           <FaTooth className={s.iconTooth} />
         </Link>
 
@@ -39,11 +39,11 @@ export default function Navigation() {
 
             <NavLink
               exact
-              to="/price"
+              to="/prices"
               className={s.link}
               activeClassName={s.activLink}
             >
-              Price
+              Prices
             </NavLink>
 
             <NavLink

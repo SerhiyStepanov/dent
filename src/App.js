@@ -12,11 +12,11 @@ export default function App() {
 
       <Suspense fallback={<h1>hallo</h1>}>
         <Switch>
-          <Route path="/"></Route>
+          <Route path="/" exact></Route>
 
           <Route path="/team"></Route>
 
-          <Route path="/price"></Route>
+          <Route path="/prices"></Route>
 
           <Route path="/contacts"></Route>
 
