@@ -1,16 +1,28 @@
+import { Switch, Route, Redirect } from "react-router-dom";
+import { Suspense } from "react";
 import Navigation from "./components/Navigation";
-import { FaTooth } from "react-icons/fa";
+
 import "./App.css";
+import { Fragment } from "react";
 
 export default function App() {
   return (
-    <div className="App">
-      <Navigation>
-        <h3 style={{ color: "var(--accent-color)" }}>Stomatolog</h3>
-      </Navigation>
+    <Fragment>
+      <Navigation />
 
-      <h4 style={{ color: "var(--dark-color)" }}>Hallo dent</h4>
-      <FaTooth style={{ fill: "var(--primary-color)", fontSize: "24px" }} />
-    </div>
+      <Suspense fallback={<h1>hallo</h1>}>
+        <Switch>
+          <Route path="/"></Route>
+
+          <Route path="/team"></Route>
+
+          <Route path="/price"></Route>
+
+          <Route path="/contacts"></Route>
+
+          <Redirect to="/" />
+        </Switch>
+      </Suspense>
+    </Fragment>
   );
 }
