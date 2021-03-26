@@ -34,7 +34,12 @@
   padding-top: 60px;
   width: 80%;
   height: 100vh;
-  background-color: rgba(45, 45, 45, 0.85);
+  background: rgb(155, 200, 255);
+  background: linear-gradient(
+    0deg,
+    rgb(155, 200, 255) 0%,
+    rgb(255, 200, 155) 100%
+  );
 }
 
 .link {
@@ -42,7 +47,8 @@
   padding: 10px;
   margin-bottom: 10px;
   font-size: 20px;
-  color: var(--primary-color);
+  font-weight: 00;
+  color: var(--dark-color);
   text-decoration: none;
   outline: none;
 }
