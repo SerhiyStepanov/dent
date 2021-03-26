@@ -4,6 +4,8 @@ import { FaTooth, FaBars, FaTimes } from "react-icons/fa";
 import MenuButton from "../MenuButton/MenuButton";
 import s from "./navigation.module.css";
 
+// const menuBtn = document.querySelector(".icon");
+
 export default function Navigation() {
   const [menu, setMenu] = useState(false);
 
@@ -39,11 +41,11 @@ export default function Navigation() {
 
             <NavLink
               exact
-              to="/prices"
+              to="/service"
               className={s.link}
               activeClassName={s.activLink}
             >
-              Prices
+              Service
             </NavLink>
 
             <NavLink
