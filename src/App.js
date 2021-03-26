@@ -1,20 +1,20 @@
 import { Switch, Route, Redirect } from "react-router-dom";
-import { Suspense } from "react";
+import { Suspense, lazy } from "react";
 import Navigation from "./components/Navigation";
 import HomeViews from "./views/HomeViews";
-import TeamViews from "./views/TeamViews";
-import ServiceViews from "./views/ServiceViews";
-import ContactsViews from "./views/ContactsViews";
-
 import "./App.css";
 import { Fragment } from "react";
+
+const TeamViews = lazy(() => import("./views/TeamViews.js"));
+const ServiceViews = lazy(() => import("./views/ServiceViews.js"));
+const ContactsViews = lazy(() => import("./views/ContactsViews.js"));
 
 export default function App() {
   return (
     <Fragment>
       <Navigation />
 
-      <Suspense fallback={<h1>hallo</h1>}>
+      <Suspense fallback={<h1>D E N T</h1>}>
         <Switch>
           <Route path="/" exact>
             <HomeViews />
