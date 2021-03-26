@@ -1,9 +1,9 @@
+import { Fragment } from "react";
 import { Switch, Route, Redirect } from "react-router-dom";
 import { Suspense, lazy } from "react";
 import Navigation from "./components/Navigation";
 import HomeViews from "./views/HomeViews";
 import "./App.css";
-import { Fragment } from "react";
 
 const TeamViews = lazy(() => import("./views/TeamViews.js"));
 const ServiceViews = lazy(() => import("./views/ServiceViews.js"));
