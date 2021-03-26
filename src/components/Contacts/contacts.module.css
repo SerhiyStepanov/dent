@@ -7,18 +7,24 @@
 
 b {
   color: var(--dark-color);
+  margin-bottom: 16px;
 }
 
 .text {
-  display: block;
-  margin-bottom: 10px;
+  display: inline-flex;
+  margin: 0;
   font-size: 16px;
   color: var(--dark-color);
 }
 
+.box {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
 .link {
   display: inline-flex;
-  margin-bottom: 10px;
   color: var(--primary-color);
   text-decoration: none;
   outline: none;
@@ -34,14 +40,14 @@ b {
 }
 
 .iconBox {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: space-around;
   margin: 20px 30px;
 }
 
 .iconLink {
-  display: flex;
+  display: inline-flex;
   outline: none;
 }
 
