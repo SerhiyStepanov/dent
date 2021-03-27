@@ -61,8 +61,8 @@ b {
   background: rgb(155, 200, 255);
   background: linear-gradient(
     0deg,
-    rgba(155, 200, 255, 1) 0%,
-    rgba(255, 200, 155, 1) 100%
+    rgba(255, 200, 155, 1) 0%,
+    rgba(155, 200, 255, 1) 100%
   );
 
   transition: fill 250ms linear, border 250ms linear;
@@ -74,9 +74,9 @@ b {
   background: rgb(155, 200, 255);
   background: linear-gradient(
     0deg,
-    rgba(255, 200, 155, 1) 0%,
-    rgba(155, 200, 255, 1) 100%
+    rgba(155, 200, 255, 1) 0%,
+    rgba(255, 200, 155, 1) 100%
   );
 
-  transition: fill 250ms linear, border 250ms linear;
+  transition: fill 250ms linear;
 }

@@ -73,7 +73,6 @@ export default function Navigation() {
           )}
         </MenuButton>
       </div>
-      <hr />
     </>
   );
 }
