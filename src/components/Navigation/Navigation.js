@@ -12,6 +12,9 @@ export default function Navigation() {
   const menuBtnClick = (e) => {
     setMenu((prevState) => (prevState = !prevState));
   };
+  // const menuBtnOver = (e) => {
+  //   setMenu((prevState) => (prevState = !prevState));
+  // };
   return (
     <>
       <div className={s.thumb}>
@@ -59,7 +62,10 @@ export default function Navigation() {
           </nav>
         )}
 
-        <MenuButton onClick={menuBtnClick}>
+        <MenuButton
+          onClick={menuBtnClick}
+          // onMouseOver={menuBtnOver}
+        >
           {menu ? (
             <FaTimes className={s.icon} />
           ) : (
