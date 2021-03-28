@@ -1,0 +1,18 @@
+.thumb {
+  margin-bottom: 30px;
+}
+
+.text {
+  color: var(--dark-color);
+}
+
+.time {
+  display: inline-flex;
+  margin-left: 10px;
+  color: var(--dark-color);
+}
+
+i {
+  margin-left: 10px;
+  color: var(--accent-color);
+}
