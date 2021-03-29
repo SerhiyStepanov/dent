@@ -4,17 +4,13 @@ import { FaTooth, FaBars, FaTimes } from "react-icons/fa";
 import MenuButton from "../MenuButton/MenuButton";
 import s from "./navigation.module.css";
 
-// const menuBtn = document.querySelector(".icon");
-
 export default function Navigation() {
   const [menu, setMenu] = useState(false);
 
   const menuBtnClick = (e) => {
     setMenu((prevState) => (prevState = !prevState));
   };
-  // const menuBtnOver = (e) => {
-  //   setMenu((prevState) => (prevState = !prevState));
-  // };
+
   return (
     <>
       <div className={s.thumb}>
