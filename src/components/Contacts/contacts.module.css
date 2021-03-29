@@ -13,7 +13,6 @@ b {
 .text {
   display: inline-flex;
   margin: 0;
-  font-size: 16px;
   color: var(--dark-color);
 }
 
@@ -42,6 +41,5 @@ b {
 .icon {
   display: flex;
   margin-right: 10px;
-  font-size: 16px;
   fill: var(--accent-color);
 }
