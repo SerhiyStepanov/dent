@@ -2,6 +2,7 @@ import { Fragment } from "react";
 import { Switch, Route, Redirect } from "react-router-dom";
 import { Suspense, lazy } from "react";
 import Navigation from "./components/Navigation";
+import ButtonCall from "./components/ButtonCall";
 import HomeViews from "./views/HomeViews";
 import "./App.css";
 
@@ -13,7 +14,6 @@ export default function App() {
   return (
     <Fragment>
       <Navigation />
-
       <Suspense fallback={<h1>D E N T</h1>}>
         <Switch>
           <Route path="/" exact>
@@ -35,6 +35,8 @@ export default function App() {
           <Redirect to="/" />
         </Switch>
       </Suspense>
+
+      <ButtonCall />
     </Fragment>
   );
 }

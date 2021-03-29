@@ -1,0 +1,22 @@
+.thumb {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  border-radius: 50%;
+  background-color: rgb(20, 200, 100);
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+}
+
+.icon {
+  display: block;
+  font-size: 20px;
+  rotate: 270deg;
+  fill: var(--dark-color);
+}
