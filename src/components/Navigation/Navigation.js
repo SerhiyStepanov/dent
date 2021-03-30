@@ -7,8 +7,8 @@ import s from "./navigation.module.css";
 export default function Navigation() {
   const [menu, setMenu] = useState(false);
 
-  const menuBtnClick = (e) => {
-    setMenu((prevState) => (prevState = !prevState));
+  const menuBtnClick = () => {
+    setMenu((prevState) => !prevState);
   };
 
   return (

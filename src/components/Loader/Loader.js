@@ -3,7 +3,14 @@ import Loader from "react-loader-spinner";
 
 export default function LoaderView() {
   return (
-    <div style={{ marginLeft: "10%", marginTop: "10%" }}>
+    <div
+      style={{
+        position: "fixed",
+        top: "40%",
+        left: "50%",
+        transform: "-50% , -50%",
+      }}
+    >
       <Loader
         type="Audio"
         color="#fe6102"
