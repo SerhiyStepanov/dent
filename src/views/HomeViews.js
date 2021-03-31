@@ -11,21 +11,17 @@ export default function HomeViews() {
       <BoxView>
         <h4 style={{ textAlign: "center", fontSize: "18px" }}>Наші лікарі:</h4>
         <LinkGoTo text={"Детальніше"} props={"/team"} />
-      </BoxView>
 
-      <BoxView>
         <h4 style={{ textAlign: "center", fontSize: "18px" }}>Послуги:</h4>
         <LinkGoTo text={"Детальніше"} props={"/service"} />
-      </BoxView>
 
-      <BoxView>
         <h4 style={{ textAlign: "center", fontSize: "18px" }}>
           Більше про нас:
         </h4>
         <WorkSchedule />
-      </BoxView>
 
-      <LinkGoTo text={"Детальніше"} props={"/contacts"} />
+        <LinkGoTo text={"Детальніше"} props={"/contacts"} />
+      </BoxView>
     </div>
   );
 }

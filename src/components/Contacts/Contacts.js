@@ -1,13 +1,9 @@
 import { FaMapMarkerAlt, FaEnvelope, FaPhoneAlt } from "react-icons/fa";
-import WorkSchedule from "../WorkSchedule";
-import SocialNetworks from "../SocialNetworks";
 import s from "./contacts.module.css";
 
 export default function Contacts() {
   return (
     <div className={s.thumb}>
-      <WorkSchedule />
-
       <b>Наша адреса:</b>
 
       <address>
@@ -37,8 +33,6 @@ export default function Contacts() {
           </a>
         </div>
       </address>
-
-      <SocialNetworks />
     </div>
   );
 }

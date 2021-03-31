@@ -1,5 +1,5 @@
 .iconBox {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   justify-content: space-around;
   margin: 20px 30px;
@@ -16,26 +16,28 @@
   font-size: 44px;
   border: 2px solid var(--dark-color);
   border-radius: 50%;
-  fill: var(--dark-color);
-  background: rgb(155, 200, 255);
+  fill: var(--accent-color);
+  /* background: rgb(155, 200, 255);
   background: linear-gradient(
     0deg,
     rgba(255, 200, 155, 1) 0%,
     rgba(155, 200, 255, 1) 100%
-  );
+  ); */
 
   transition: fill 250ms linear, border 250ms linear;
 }
 
 .iconLink:hover .icon,
 .iconLink:focus .icon {
-  fill: var(--accent-color);
-  background: rgb(155, 200, 255);
+  fill: var(--dark-color);
+  border: 2px solid var(--accent-color);
+
+  /* background: rgb(155, 200, 255);
   background: linear-gradient(
     0deg,
     rgba(155, 200, 255, 1) 0%,
     rgba(255, 200, 155, 1) 100%
-  );
+  ); */
 
-  transition: fill 250ms linear;
+  transition: fill 250ms linear, border 250ms linear;
 }
