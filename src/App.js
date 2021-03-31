@@ -36,7 +36,6 @@ export default function App() {
           <Redirect to="/" />
         </Switch>
       </Suspense>
-
       <ButtonCall />
     </Fragment>
   );

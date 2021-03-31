@@ -9,6 +9,11 @@
 
   transition: border 250ms linear;
 }
+@media screen and (min-width: 769px) {
+  .thumb {
+    display: none;
+  }
+}
 
 .thumb:hover,
 .thumb:focus {
