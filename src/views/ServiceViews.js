@@ -3,7 +3,7 @@ export default function ServiceViews() {
   return (
     <div>
       <h3 style={{ textAlign: "center", color: "var(--dark-color)" }}>
-        Service
+        Послуги
       </h3>
       <BoxView></BoxView>
     </div>

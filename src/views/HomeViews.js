@@ -5,9 +5,9 @@ import WorkSchedule from "../components/WorkSchedule";
 export default function HomeViews() {
   return (
     <div>
-      <h3 style={{ textAlign: "center", color: "var(--dark-color)" }}>
-        Dentistry
-      </h3>
+      <h2 style={{ textAlign: "center", color: "var(--dark-color)" }}>
+        Стоматологія
+      </h2>
       <BoxView>
         <h4 style={{ textAlign: "center", fontSize: "18px" }}>Наші лікарі:</h4>
         <LinkGoTo text={"Детальніше"} props={"/team"} />

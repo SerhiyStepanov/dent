@@ -8,7 +8,7 @@ export default function ContactsViews() {
     <div>
       <BoxView>
         <h3 style={{ textAlign: "center", color: "var(--dark-color)" }}>
-          Contacts
+          Більше про нас
         </h3>
 
         <WorkSchedule />

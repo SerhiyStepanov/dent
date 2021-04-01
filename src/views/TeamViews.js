@@ -4,7 +4,7 @@ export default function TeamViews() {
   return (
     <div>
       <h3 style={{ textAlign: "center", color: "var(--dark-color)" }}>
-        Our team
+        Наші лікарі
       </h3>
       <BoxView></BoxView>
     </div>
