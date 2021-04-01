@@ -58,10 +58,7 @@ export default function Navigation() {
           </nav>
         )}
 
-        <MenuButton
-          onClick={menuBtnClick}
-          // onMouseOver={menuBtnOver}
-        >
+        <MenuButton onClick={menuBtnClick}>
           {menu ? (
             <FaTimes className={s.icon} />
           ) : (

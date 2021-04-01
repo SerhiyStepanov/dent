@@ -2,7 +2,8 @@ import { Fragment } from "react";
 import { Switch, Route, Redirect } from "react-router-dom";
 import { Suspense, lazy } from "react";
 import LoaderView from "./components/Loader";
-import Navigation from "./components/Navigation";
+import Navigation from "./components/MobileNav";
+import DesctopNav from "./components/DesctopNav";
 import ButtonCall from "./components/ButtonCall";
 import HomeViews from "./views/HomeViews";
 import "./App.css";
@@ -14,7 +15,7 @@ const ContactsViews = lazy(() => import("./views/ContactsViews.js"));
 export default function App() {
   return (
     <Fragment>
-      <Navigation />
+      {window.innerWidth > 768 ? <DesctopNav /> : <Navigation />}
       <Suspense fallback={<LoaderView />}>
         <Switch>
           <Route path="/" exact>
