@@ -25,15 +25,6 @@ export default function DesctopNav() {
       >
         Service
       </NavLink>
-
-      <NavLink
-        exact
-        to="/contacts"
-        className={s.link}
-        activeClassName={s.activLink}
-      >
-        Cocntacts
-      </NavLink>
     </nav>
   );
 }

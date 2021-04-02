@@ -1,6 +1,5 @@
 import BoxView from "../components/BoxView";
 import LinkGoTo from "../components/LinkGoTo";
-import WorkSchedule from "../components/WorkSchedule";
 
 export default function HomeViews() {
   return (
@@ -14,13 +13,6 @@ export default function HomeViews() {
 
         <h4 style={{ textAlign: "center", fontSize: "18px" }}>Послуги:</h4>
         <LinkGoTo text={"Детальніше"} props={"/service"} />
-
-        <h4 style={{ textAlign: "center", fontSize: "18px" }}>
-          Більше про нас:
-        </h4>
-        <WorkSchedule />
-
-        <LinkGoTo text={"Детальніше"} props={"/contacts"} />
       </BoxView>
     </div>
   );

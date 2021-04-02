@@ -46,15 +46,6 @@ export default function Navigation() {
             >
               Service
             </NavLink>
-
-            <NavLink
-              exact
-              to="/contacts"
-              className={s.link}
-              activeClassName={s.activLink}
-            >
-              Cocntacts
-            </NavLink>
           </nav>
         )}
 

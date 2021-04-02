@@ -1,19 +1,13 @@
 .thumb {
   display: block;
   position: fixed;
-  bottom: 60px;
-  right: 40px;
+  bottom: 20px;
+  right: 20px;
   border-radius: 50%;
   border: 5px solid rgb(111, 211, 111);
   background-color: rgb(76, 175, 80);
 
   transition: border 250ms linear;
-}
-
-@media screen and (min-width: 769px) {
-  .thumb {
-    display: none;
-  }
 }
 
 .thumb:hover,

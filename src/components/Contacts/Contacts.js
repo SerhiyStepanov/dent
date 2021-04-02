@@ -9,7 +9,7 @@ export default function Contacts() {
       <address>
         <div className={s.box}>
           <FaMapMarkerAlt className={s.icon} />
-          <p className={s.text}>м.Львів, вул.Манастирського 2 / 1 </p>
+          <p className={s.text}>м.Львів, вул.Манастирського 2/1 </p>
         </div>
 
         <div className={s.box}>
