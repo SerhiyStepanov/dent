@@ -1,5 +1,9 @@
 [
-  { "name": "Adnan", "title": "Dantist implantologist ", "descr": "" },
+  {
+    "name": "Adnan",
+    "title": "Dantist implantologist ",
+    "descr": ""
+  },
 
   { "name": "Jon", "title": "Orthodontist  ", "descr": "" },
 
