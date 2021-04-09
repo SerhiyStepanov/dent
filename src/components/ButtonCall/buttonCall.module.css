@@ -5,7 +5,7 @@
   right: 20px;
   border-radius: 50%;
   border: 6px solid rgb(150, 230, 150);
-  background-color: rgb(76, 175, 80);
+  background-color: rgb(60, 160, 60);
 
   transition: border 250ms linear;
 }
@@ -29,22 +29,25 @@
 .icon {
   display: block;
   font-size: 20px;
-  rotate: 250deg;
-  fill: var(--dark-color);
+  rotate: 270deg;
+  fill: var(--light-color);
 
-  animation: phone 2s infinite linear;
+  animation: phone 1s infinite linear;
 }
 
 @keyframes phone {
   0% {
-    transform: rotate(0deg);
+    /* transform: rotate(0deg); */
+    transform: scale(1);
   }
 
   50% {
-    transform: rotate(35deg);
+    /* transform: rotate(45deg); */
+    transform: scale(1.2);
   }
 
   100% {
-    transform: rotate(0deg);
+    /* transform: rotate(0deg); */
+    transform: scale(1);
   }
 }

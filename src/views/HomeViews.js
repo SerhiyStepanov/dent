@@ -5,8 +5,14 @@ export default function HomeViews() {
   return (
     <div>
       <BoxView>
-        <h2 style={{ textAlign: "center", color: "var(--dark-color)" }}>
-          Стоматологія <span>Аднан Дент</span>
+        <h2
+          style={{
+            textAlign: "center",
+            color: "var(--dark-color)",
+            fontWeight: "600",
+          }}
+        >
+          Стоматологія <span style={{ fontWeight: "700" }}>Аднан Дент</span>
         </h2>
         <p
           style={{

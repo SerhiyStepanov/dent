@@ -5,10 +5,10 @@ export default function Team({ children }) {
   return (
     <div>
       <ul className={s.wrapper}>
-        {team.map(({ name, title, descr }, index) => (
+        {team.map(({ url, alt, name, title, descr }, index) => (
           <li key={index} className={s.list}>
             <div className={s.thumb}>
-              <img />
+              <img src={url} alt={alt} />
               <p className={s.name}>{name}</p>
               <p className={s.title}>{title}</p>
               <p className={s.descr}>{descr}</p>

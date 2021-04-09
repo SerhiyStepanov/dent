@@ -1,11 +1,25 @@
 [
   {
+    "url": "",
+    "alt": "",
     "name": "Adnan",
     "title": "Dantist implantologist ",
     "descr": ""
   },
 
-  { "name": "Jon", "title": "Orthodontist  ", "descr": "" },
+  {
+    "url": "",
+    "alt": "",
+    "name": "Jon",
+    "title": "Orthodontist  ",
+    "descr": ""
+  },
 
-  { "name": "Anna", "title": "Baby  dantist", "descr": "" }
+  {
+    "url": "",
+    "alt": "",
+    "name": "Anna",
+    "title": "Baby  dantist",
+    "descr": ""
+  }
 ]
