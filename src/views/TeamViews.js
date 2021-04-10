@@ -6,7 +6,7 @@ export default function TeamViews({ children }) {
     <div>
       <BoxView>
         <h3 style={{ textAlign: "center", color: "var(--dark-color)" }}>
-          Наші лікарі
+          Спеціалісти
         </h3>
         <Team />
       </BoxView>

@@ -1,8 +1,12 @@
 [
-  { "description": "Лікування ", "price": "100" },
-  { "description": "Пломбування ", "price": "200" },
-  { "description": "Видалення ", "price": "300" },
-  { "description": "Гігієна", "price": "400" },
-  { "description": "Протезування ", "price": "500" },
-  { "description": "Імплант ", "price": "600" }
+  { "description": "Консультація спеціаліста", "price": "250" },
+  { "description": "Анестезія ін'єкційна ", "price": "150" },
+  { "description": "Медикаментозна обробка одного каналу ", "price": "150" },
+  { "description": "Тимчасове пломбування кореневого каналу ", "price": "200" },
+  { "description": "Пломбування каналу", "price": "300" },
+  { "description": "Пломба фотополімерна ", "price": "250 - 600" },
+  { "description": "Пломба з склоіономера", "price": "500" },
+  { "description": "Розпломбовування каналу ", "price": "300" },
+  { "description": "Панорамний знімок", "price": "250" },
+  { "description": "Комплексна професійна гігієна ", "price": "2000" }
 ]

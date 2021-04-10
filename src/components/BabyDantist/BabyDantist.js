@@ -1,12 +1,12 @@
-import treatment from "../../treatmentе.json";
-import s from "./treatment.module.css";
+import babyPrice from "../../bebyDantist.json";
+import s from "./babyDantist.module.css";
 
-export default function Treatment() {
+export default function BabyDantist() {
   return (
     <div>
-      <h4 className={s.title}>Для дорослих</h4>
+      <h4 className={s.title}>Для дітей</h4>
       <p className={s.text}>* - ціни можуть коливатися</p>
-      <table className={s.treatmentv}>
+      <table className={s.wrapper}>
         <thead>
           <tr className={s.head}>
             <th>Послуги</th>
@@ -15,7 +15,7 @@ export default function Treatment() {
         </thead>
 
         <tbody>
-          {treatment.map((el, index) => (
+          {babyPrice.map((el, index) => (
             <tr key={index}>
               <td>{el.description}</td>
               <td>{`${el.price}грн`}</td>

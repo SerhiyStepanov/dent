@@ -5,7 +5,7 @@ export default function DesctopNav() {
   return (
     <nav className={s.navigation}>
       <NavLink exact to="/" className={s.link} activeClassName={s.activLink}>
-        Home
+        Головна
       </NavLink>
 
       <NavLink
@@ -14,7 +14,7 @@ export default function DesctopNav() {
         className={s.link}
         activeClassName={s.activLink}
       >
-        Team
+        Спеціалісти
       </NavLink>
 
       <NavLink
@@ -23,7 +23,7 @@ export default function DesctopNav() {
         className={s.link}
         activeClassName={s.activLink}
       >
-        Service
+        Послуги
       </NavLink>
     </nav>
   );
