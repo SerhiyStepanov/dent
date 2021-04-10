@@ -1,0 +1,8 @@
+[
+  { "description": "Лікування ", "price": "100" },
+  { "description": "Пломбування ", "price": "200" },
+  { "description": "Видалення ", "price": "300" },
+  { "description": "Гігієна", "price": "400" },
+  { "description": "Протезування ", "price": "500" },
+  { "description": "Імплант ", "price": "600" }
+]
