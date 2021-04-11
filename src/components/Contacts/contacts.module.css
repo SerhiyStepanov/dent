@@ -24,9 +24,6 @@ b {
 .box {
   display: flex;
   align-items: center;
-}
-
-.box:not(:last-child) {
   margin-bottom: 16px;
 }
 
@@ -42,7 +39,6 @@ b {
 .link:hover,
 .link:focus {
   color: var(--accent-color);
-  text-decoration: underline;
 
   transition: color 250ms linear;
 }

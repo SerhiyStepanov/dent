@@ -8,7 +8,7 @@ export default function Team({ children }) {
         {team.map(({ url, alt, name, title, descr }, index) => (
           <li key={index} className={s.list}>
             <div className={s.thumb}>
-              <img src={url} alt={alt} />
+              <img src={url} alt={alt} className={s.photo} />
               <p className={s.name}>{name}</p>
               <p className={s.title}>{title}</p>
               <p className={s.descr}>{descr}</p>
