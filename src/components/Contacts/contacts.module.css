@@ -24,6 +24,9 @@ b {
 .box {
   display: flex;
   align-items: center;
+}
+
+.box:not(:last-child) {
   margin-bottom: 16px;
 }
 

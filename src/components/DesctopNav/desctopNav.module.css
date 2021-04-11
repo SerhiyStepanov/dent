@@ -11,9 +11,8 @@
 
 .link {
   display: block;
-  padding: 15px 30px;
-  font-size: 20px;
-  font-weight: 00;
+  padding: 10px 30px;
+  font-size: 16px;
   color: var(--dark-color);
   border-right: 1px solid var(--dark-color);
   text-decoration: none;

@@ -15,7 +15,7 @@ const ServiceViews = lazy(() => import("./views/ServiceViews.js"));
 export default function App() {
   return (
     <Fragment>
-      {window.innerWidth > 768 ? <DesctopNav /> : <Navigation />}
+      {window.innerWidth > 767 ? <DesctopNav /> : <Navigation />}
       <Suspense fallback={<LoaderView />}>
         <Switch>
           <Route path="/" exact>
@@ -34,7 +34,7 @@ export default function App() {
         </Switch>
       </Suspense>
       <ContactsViews />
-      {window.innerWidth < 769 && <ButtonCall />}
+      {window.innerWidth < 768 && <ButtonCall />}
     </Fragment>
   );
 }
