@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { NavLink, Link } from "react-router-dom";
 import { FaTooth, FaBars, FaTimes } from "react-icons/fa";
 import MenuButton from "../MenuButton/MenuButton";

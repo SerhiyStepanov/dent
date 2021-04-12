@@ -22,14 +22,14 @@ export default function Contacts() {
         <div className={s.box}>
           <FaPhoneAlt className={s.icon} />
           <a href="tel:+380676700770" className={s.link}>
-            +38 067 670 0770
+            38 067 670 0770
           </a>
         </div>
 
         <div className={s.box}>
           <FaPhoneAlt className={s.icon} />
           <a href="tel:+380634745565" className={s.link}>
-            +38 063 474 5565
+            38 063 474 5565
           </a>
         </div>
       </address>
