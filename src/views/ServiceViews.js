@@ -4,16 +4,21 @@ import BabyDantist from "../components/BabyDantist";
 
 export default function ServiceViews() {
   return (
-    <div>
-      <BoxView>
-        <h3 style={{ textAlign: "center", color: "var(--dark-color)" }}>
-          Перелік усіх послуг
-        </h3>
+    <BoxView>
+      <h3
+        style={{
+          textAlign: "center",
+          marginTop: "0px",
+          marginBottom: "30px",
+          color: "var(--dark-color)",
+        }}
+      >
+        Перелік усіх послуг
+      </h3>
 
-        <Treatment />
+      <Treatment />
 
-        <BabyDantist />
-      </BoxView>
-    </div>
+      <BabyDantist />
+    </BoxView>
   );
 }
