@@ -5,10 +5,10 @@ import MenuButton from "../MenuButton/MenuButton";
 import s from "./navigation.module.css";
 
 export default function Navigation() {
-  const [menu, setMenu] = useState(false);
+  const [menuIsOpen, setMenuIsOpen] = useState(false);
 
   const menuBtnClick = () => {
-    setMenu((prevState) => !prevState);
+    setMenuIsOpen((prevState) => !prevState);
   };
 
   return (
@@ -18,13 +18,14 @@ export default function Navigation() {
           <FaTooth className={s.iconTooth} />
         </Link>
 
-        {menu && (
-          <nav className={s.navigation}>
+        {menuIsOpen && (
+          <nav className={s.navigation} onClick={() => setMenuIsOpen(false)}>
             <NavLink
               exact
               to="/"
               className={s.link}
               activeClassName={s.activLink}
+              // onClick={(e) => e.stopPropagation()}
             >
               Головна
             </NavLink>
@@ -34,6 +35,7 @@ export default function Navigation() {
               to="/team"
               className={s.link}
               activeClassName={s.activLink}
+              // onClick={(e) => e.stopPropagation()}
             >
               Спеціалісти
             </NavLink>
@@ -43,6 +45,7 @@ export default function Navigation() {
               to="/service"
               className={s.link}
               activeClassName={s.activLink}
+              // onClick={(e) => e.stopPropagation()}
             >
               Послуги
             </NavLink>
@@ -50,7 +53,7 @@ export default function Navigation() {
         )}
 
         <MenuButton onClick={menuBtnClick}>
-          {menu ? (
+          {menuIsOpen ? (
             <FaTimes className={s.icon} />
           ) : (
             <FaBars className={s.icon} />
