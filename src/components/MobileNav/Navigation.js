@@ -19,13 +19,13 @@ export default function Navigation() {
         </Link>
 
         {menuIsOpen && (
-          <nav className={s.navigation} onClick={() => setMenuIsOpen(false)}>
+          <nav className={s.navigation}>
             <NavLink
               exact
               to="/"
               className={s.link}
               activeClassName={s.activLink}
-              // onClick={(e) => e.stopPropagation()}
+              onClick={() => setMenuIsOpen(false)}
             >
               Головна
             </NavLink>
@@ -35,7 +35,7 @@ export default function Navigation() {
               to="/team"
               className={s.link}
               activeClassName={s.activLink}
-              // onClick={(e) => e.stopPropagation()}
+              onClick={() => setMenuIsOpen(false)}
             >
               Спеціалісти
             </NavLink>
@@ -45,7 +45,7 @@ export default function Navigation() {
               to="/service"
               className={s.link}
               activeClassName={s.activLink}
-              // onClick={(e) => e.stopPropagation()}
+              onClick={() => setMenuIsOpen(false)}
             >
               Послуги
             </NavLink>

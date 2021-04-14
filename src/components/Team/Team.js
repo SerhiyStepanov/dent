@@ -1,7 +1,7 @@
 import team from "../../team.json";
 import s from "./team.module.css";
 
-export default function Team({ children }) {
+export default function Team() {
   return (
     <div>
       <ul className={s.wrapper}>
