@@ -16,7 +16,7 @@ export default function Treatment() {
 
         <tbody>
           {treatment.map((el, index) => (
-            <tr key={index}>
+            <tr key={index} className={s.trow}>
               <td>{el.description}</td>
               <td>{`${el.price}грн`}</td>
             </tr>
