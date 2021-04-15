@@ -3,10 +3,10 @@ import s from "./treatment.module.css";
 
 export default function Treatment() {
   return (
-    <div>
+    <div className={s.wrapper}>
       <h4 className={s.title}>Для дорослих</h4>
       <p className={s.text}>* - ціни можуть коливатися</p>
-      <table className={s.treatmentv}>
+      <table className={s.table}>
         <thead>
           <tr className={s.head}>
             <th>Послуги</th>

@@ -3,10 +3,10 @@ import s from "./babyDantist.module.css";
 
 export default function BabyDantist() {
   return (
-    <div>
+    <div className={s.wrapper}>
       <h4 className={s.title}>Для дітей</h4>
       <p className={s.text}>* - ціни можуть коливатися</p>
-      <table className={s.wrapper}>
+      <table className={s.table}>
         <thead>
           <tr className={s.head}>
             <th>Послуги</th>

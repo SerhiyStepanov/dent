@@ -16,9 +16,15 @@ export default function ServiceViews() {
         Перелік усіх послуг
       </h3>
 
-      <Treatment />
+      <div
+        style={
+          window.innerWidth > 768 ? { display: "flex" } : { display: "block" }
+        }
+      >
+        <Treatment />
 
-      <BabyDantist />
+        <BabyDantist />
+      </div>
     </BoxView>
   );
 }

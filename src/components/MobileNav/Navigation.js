@@ -14,7 +14,11 @@ export default function Navigation() {
   return (
     <>
       <div className={s.thumb}>
-        <Link to="/" className={s.iconLink}>
+        <Link
+          to="/"
+          className={s.iconLink}
+          onClick={() => setMenuIsOpen(false)}
+        >
           <FaTooth className={s.iconTooth} />
         </Link>
 
