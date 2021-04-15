@@ -12,8 +12,10 @@
 }
 
 .table tr:hover {
-  background-color: rgb(130, 130, 130);
+  background-color: rgb(128, 128, 128);
   color: white;
+
+  transition: background-color 200ms linear, color 200ms linear;
 }
 
 .title {
