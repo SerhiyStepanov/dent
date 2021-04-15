@@ -11,6 +11,11 @@
   border: 1px solid var(--dark-color);
 }
 
+.table tr:hover {
+  background-color: rgb(130, 130, 130);
+  color: white;
+}
+
 .title {
   text-align: center;
   color: var(--dark-color);
