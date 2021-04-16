@@ -23,9 +23,11 @@ export default function Team() {
           <li key={index} className={s.list} onClick={() => showModal(el)}>
             <div className={s.thumb}>
               <img src={el.url} alt={el.alt} className={s.photo} />
-              <p className={s.name}>{el.name}</p>
-              <p className={s.title}>{el.title}</p>
-              <p className={s.descr}>{el.descr}</p>
+              <div className={s.content}>
+                <p className={s.name}>{el.name}</p>
+                <p className={s.title}>{el.title}</p>
+                <p className={s.descr}>{el.descr}</p>
+              </div>
             </div>
           </li>
         ))}
