@@ -11,6 +11,13 @@
   }
 }
 
+@media screen and (min-width: 769px) {
+  .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
 .list {
   list-style: none;
   border-radius: 6px;
@@ -35,8 +42,8 @@
 
 @media screen and (min-width: 769px) {
   .list {
-    margin: 50px 50px;
-    width: calc((100% - 300px) / 3);
+    margin: 30px 30px;
+    width: calc((100% - 180px) / 3);
   }
 }
 

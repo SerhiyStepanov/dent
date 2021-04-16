@@ -1,11 +1,23 @@
 .thumb {
   padding: 30px;
+  min-height: calc(100vh - 216px);
   color: var(--dark-color);
 }
 
 @media screen and (min-width: 768px) {
   .thumb {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding: 60px 60px;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .thumb {
+    padding: 60px 120px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .thumb {
+    padding: 60px 200px;
   }
 }
