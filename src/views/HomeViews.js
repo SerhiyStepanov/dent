@@ -1,6 +1,7 @@
 import BoxView from "../components/BoxView";
 import LinkGoTo from "../components/LinkGoTo";
 import CardTeam from "../components/CardTeam";
+import ListService from "../components/ListService";
 
 export default function HomeViews({ children }) {
   return (
@@ -24,15 +25,17 @@ export default function HomeViews({ children }) {
         Ми робимо вашу посмішку краще.
       </p>
 
-      <div style={{ marginBottom: "30px" }}>
-        <h4 style={{ textAlign: "center", fontSize: "18px" }}>Спеціалісти:</h4>
+      <div style={{ marginBottom: "60px" }}>
+        <h4 style={{ textAlign: "center", fontSize: "18px" }}>
+          Наші спеціалісти:
+        </h4>
         <CardTeam />
         <LinkGoTo text={"Детальніше"} props={"/team"} />
       </div>
 
       <div>
         <h4 style={{ textAlign: "center", fontSize: "18px" }}>Послуги:</h4>
-
+        <ListService />
         <LinkGoTo text={"Детальніше"} props={"/service"} />
       </div>
     </BoxView>

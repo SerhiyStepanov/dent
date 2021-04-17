@@ -1,0 +1,23 @@
+.wrapper {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.list {
+  display: inline-flex;
+  flex-direction: column;
+  padding: 0;
+}
+
+.listItem {
+  list-style: circle;
+  color: var(--accent-color);
+}
+
+.text {
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: var(--dark-color);
+}
