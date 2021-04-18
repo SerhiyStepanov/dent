@@ -28,7 +28,6 @@ export default function Modal({ closeModal, card }) {
           <div className={s.content}>
             <p className={s.name}>{name}</p>
             <p className={s.title}>{title}</p>
-            <p className={s.descr}>{descr}</p>
           </div>
         </div>
       </div>

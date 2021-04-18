@@ -1,5 +1,5 @@
 import s from "./cardTeam.module.css";
-import team from "../../team.json";
+import team from "../Team/team.json";
 
 export default function CardTeam() {
   return (

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import team from "../../team.json";
+import team from "./team.json";
 import Modal from "../Modal";
 import s from "./team.module.css";
 
@@ -26,7 +26,9 @@ export default function Team() {
               <div className={s.content}>
                 <p className={s.name}>{el.name}</p>
                 <p className={s.title}>{el.title}</p>
-                <p className={s.descr}>{el.descr}</p>
+                <div className={s.overflow}>
+                  <p className={s.descr}>{el.descr}</p>
+                </div>
               </div>
             </div>
           </li>
