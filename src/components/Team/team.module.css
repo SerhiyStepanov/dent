@@ -28,16 +28,11 @@
 
 @media screen and (min-width: 768px) {
   .list {
+    margin: 30px 30px;
+    width: calc((100% - 120px) / 2);
     box-shadow: 6px 6px 12px -3px rgba(45, 46, 47, 0.7);
     -webkit-box-shadow: 6px 6px 12px -3px rgba(45, 46, 47, 0.7);
     -moz-box-shadow: 6px 6px 12px -3px rgba(45, 46, 47, 0.7);
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .list {
-    margin: 30px 30px;
-    width: calc((100% - 120px) / 2);
   }
 }
 
@@ -60,7 +55,8 @@
 }
 
 .content {
-  display: block;
+  display: flex;
+  flex-direction: column;
   position: relative;
   border-bottom-left-radius: 6px;
   border-bottom-right-radius: 6px;
@@ -75,6 +71,7 @@
 }
 
 .overflow {
+  display: inline-flex;
   position: absolute;
   top: 0;
   left: 0;
