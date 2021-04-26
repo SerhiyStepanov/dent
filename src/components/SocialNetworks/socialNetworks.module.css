@@ -30,23 +30,27 @@
 
 .icon {
   display: flex;
-  padding: 4px;
-  font-size: 36px;
-  border: 2px solid var(--light-color);
+  padding: 8px;
+  font-size: 44px;
   border-radius: 50%;
   fill: var(--primary-color);
-  background-color: transparent;
+  background-color: var(--secondary-dark-color);
 
   transition: fill 250ms linear, border 250ms linear,
     background-color 250ms linear;
 }
 
+@media screen and (min-width: 768px) {
+  .icon {
+    padding: 6px;
+    font-size: 40px;
+  }
+}
+
 .iconLink:hover .icon,
 .iconLink:focus .icon {
   fill: var(--accent-color);
-  border: 2px solid var(--accent-color);
   background-color: var(--light-color);
 
-  transition: fill 250ms linear, border 250ms linear,
-    background-color 250ms linear;
+  transition: fill 250ms linear, background-color 250ms linear;
 }
