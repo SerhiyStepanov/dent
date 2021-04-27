@@ -2,15 +2,15 @@ import { useEffect } from "react";
 import s from "./modal.module.css";
 
 export default function Modal({ closeModal, card }) {
-  const { url, alt, name, title, descr } = card;
-  const handleKeyDown = (e) => {
-    if (e.code === "Escape") {
+  const { url, alt, name, title } = card;
+  const handleKeyDown = (event) => {
+    if (event.code === "Escape") {
       closeModal();
     }
   };
 
-  const clickOnBackdrop = (e) => {
-    if (e.currentTarget === e.target) {
+  const clickOnBackdrop = (event) => {
+    if (event.currentTarget === event.target) {
       closeModal();
     }
   };

@@ -1,9 +1,13 @@
+import { NavLink, Route, useParams, useRouteMatch } from "react-router-dom";
 import BoxView from "../components/BoxView";
 import ListService from "../components/ListService";
-import Treatment from "../components/Treatment";
+import Orthopaedist from "../components/Orthopaedist";
 import BabyDantist from "../components/BabyDantist";
+import Therapeutic from "../components/Therapeutic";
+import Periodontology from "../components/Periodontology";
 
 export default function ServiceViews() {
+  const { url, path } = useRouteMatch();
   return (
     <BoxView>
       <h3
@@ -17,16 +21,28 @@ export default function ServiceViews() {
         Перелік усіх послуг
       </h3>
 
-      <div
-
-      // style={
-      //   window.innerWidth > 768 ? { display: "flex" } : { display: "block" }
-      // }
-      >
+      <div>
         <ListService />
-        {/* <Treatment /> */}
 
-        {/* <BabyDantist /> */}
+        <Route path={`${path}/therapeutic`}>
+          <Therapeutic />
+        </Route>
+
+        <Route path={`${path}/periodontology`}>
+          <Periodontology />
+        </Route>
+
+        <Route path={`${path}/orthopaedist`}>
+          <Orthopaedist />
+
+          <Route path={`${path}/baby`}>
+            <BabyDantist />
+          </Route>
+        </Route>
+
+        <Route path={`${path}/orthodontics`}>...</Route>
+
+        <Route path={`${path}/prevention`}>...</Route>
       </div>
     </BoxView>
   );

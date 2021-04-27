@@ -1,10 +1,10 @@
-import treatment from "../../treatmentе.json";
-import s from "./treatment.module.css";
+import prices from "./orthopaedist.json";
+import s from "./orthopaedist.module.css";
 
-export default function Treatment() {
+export default function Orthopaedist() {
   return (
     <div className={s.wrapper}>
-      <h4 className={s.title}>Для дорослих</h4>
+      <h4 className={s.title}>Ортопедична стоматологія.</h4>
       <p className={s.text}>* - ціни можуть коливатися</p>
       <table className={s.table}>
         <thead>
@@ -15,7 +15,7 @@ export default function Treatment() {
         </thead>
 
         <tbody>
-          {treatment.map((el, index) => (
+          {prices.map((el, index) => (
             <tr key={index} className={s.trow}>
               <td>{el.description}</td>
               <td>{`${el.price}грн`}</td>

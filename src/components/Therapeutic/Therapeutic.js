@@ -1,10 +1,10 @@
-import prices from "../BabyDantist/babyDantist.json";
-import s from "./babyDantist.module.css";
+import prices from "./therapeutic.json";
+import s from "./therapeutic.module.css";
 
-export default function BabyDantist() {
+export default function Therapeutic() {
   return (
     <div className={s.wrapper}>
-      <h4 className={s.title}>Стоматологія дитячого віку.</h4>
+      <h4 className={s.title}>Терапевтична стоматологія.</h4>
       <p className={s.text}>* - ціни можуть коливатися</p>
       <table className={s.table}>
         <thead>

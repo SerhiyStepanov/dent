@@ -1,21 +1,21 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, useRouteMatch } from "react-router-dom";
 import service from "./listService.json";
 import s from "./listService.module.css";
 
 export default function ListService() {
+  const { url, path } = useRouteMatch();
   return (
     <div className={s.wrapper}>
       <ul className={s.list}>
-        {service.map((str, index) => (
+        {service.map((el, index) => (
           <li key={index} className={s.listItem}>
             <NavLink
               exact
-              to={`/service/${str}`}
+              to={`${url}/${el.descr}`}
               className={s.link}
               activeClassName={s.activLink}
             >
-              {str}
-              {/* <p className={s.text}>{str}</p> */}
+              {el.text}
             </NavLink>
           </li>
         ))}

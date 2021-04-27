@@ -6,7 +6,6 @@ import s from "./team.module.css";
 export default function Team() {
   const [openModal, setOpenModal] = useState(false);
   const [modalCard, setCardModal] = useState({});
-  console.log(modalCard);
 
   const showModal = (el) => {
     setOpenModal(true);
