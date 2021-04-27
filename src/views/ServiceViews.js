@@ -34,10 +34,10 @@ export default function ServiceViews() {
 
         <Route path={`${path}/orthopaedist`}>
           <Orthopaedist />
+        </Route>
 
-          <Route path={`${path}/baby`}>
-            <BabyDantist />
-          </Route>
+        <Route path={`${path}/baby`}>
+          <BabyDantist />
         </Route>
 
         <Route path={`${path}/orthodontics`}>...</Route>

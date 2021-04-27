@@ -3,7 +3,7 @@ import service from "./listService.json";
 import s from "./listService.module.css";
 
 export default function ListService() {
-  const { url, path } = useRouteMatch();
+  const { url } = useRouteMatch();
   return (
     <div className={s.wrapper}>
       <ul className={s.list}>
