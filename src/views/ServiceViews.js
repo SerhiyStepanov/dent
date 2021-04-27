@@ -1,13 +1,18 @@
-import { NavLink, Route, useParams, useRouteMatch } from "react-router-dom";
+import { Route, useRouteMatch } from "react-router-dom";
+
 import BoxView from "../components/BoxView";
 import ListService from "../components/ListService";
-import Orthopaedist from "../components/Orthopaedist";
-import BabyDantist from "../components/BabyDantist";
-import Therapeutic from "../components/Therapeutic";
-import Periodontology from "../components/Periodontology";
+import PricesTable from "../components/PricesTable";
+
+import periodontology from "../components/Prices/periodontology.json";
+import therapeutic from "../components/Prices/therapeutic.json";
+import orthopaedist from "../components/Prices/orthopaedist.json";
+import babyDantist from "../components/Prices/babyDantist.json";
+import orthodontics from "../components/Prices/orthodontics.json";
+import prevention from "../components/Prices/prevention.json";
 
 export default function ServiceViews() {
-  const { url, path } = useRouteMatch();
+  const { path } = useRouteMatch();
   return (
     <BoxView>
       <h3
@@ -18,31 +23,44 @@ export default function ServiceViews() {
           color: "var(--dark-color)",
         }}
       >
-        Перелік усіх послуг
+        Перелік усіх послуг:
       </h3>
 
       <div>
         <ListService />
 
         <Route path={`${path}/therapeutic`}>
-          <Therapeutic />
+          <PricesTable
+            title="Терапевтична стоматологія."
+            prices={therapeutic}
+          />
         </Route>
 
         <Route path={`${path}/periodontology`}>
-          <Periodontology />
+          <PricesTable title="Пародонтологія." prices={periodontology} />
         </Route>
 
         <Route path={`${path}/orthopaedist`}>
-          <Orthopaedist />
+          <PricesTable
+            title="Ортопедична стоматологія."
+            prices={orthopaedist}
+          />
         </Route>
 
         <Route path={`${path}/baby`}>
-          <BabyDantist />
+          <PricesTable
+            title="Стоматологія дитячого віку."
+            prices={babyDantist}
+          />
         </Route>
 
-        <Route path={`${path}/orthodontics`}>...</Route>
+        <Route path={`${path}/orthodontics`}>
+          <PricesTable title="Ортодонтія." prices={orthodontics} />
+        </Route>
 
-        <Route path={`${path}/prevention`}>...</Route>
+        <Route path={`${path}/prevention`}>
+          <PricesTable title="Профілактика і гігієна." prices={prevention} />
+        </Route>
       </div>
     </BoxView>
   );

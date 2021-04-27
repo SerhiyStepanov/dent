@@ -1,7 +1,6 @@
 import BoxView from "../components/BoxView";
 import LinkGoTo from "../components/LinkGoTo";
 import CardTeam from "../components/CardTeam";
-import ListService from "../components/ListService";
 
 export default function HomeViews({ children }) {
   return (
@@ -35,7 +34,7 @@ export default function HomeViews({ children }) {
 
       <div>
         <h4 style={{ textAlign: "center", fontSize: "18px" }}>Послуги:</h4>
-        {/* <ListService /> */}
+
         <LinkGoTo text={"Детальніше"} props={"/service"} />
       </div>
     </BoxView>
