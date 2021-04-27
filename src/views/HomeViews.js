@@ -35,7 +35,7 @@ export default function HomeViews({ children }) {
 
       <div>
         <h4 style={{ textAlign: "center", fontSize: "18px" }}>Послуги:</h4>
-        <ListService />
+        {/* <ListService /> */}
         <LinkGoTo text={"Детальніше"} props={"/service"} />
       </div>
     </BoxView>

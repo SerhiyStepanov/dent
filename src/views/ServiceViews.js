@@ -1,4 +1,5 @@
 import BoxView from "../components/BoxView";
+import ListService from "../components/ListService";
 import Treatment from "../components/Treatment";
 import BabyDantist from "../components/BabyDantist";
 
@@ -17,13 +18,15 @@ export default function ServiceViews() {
       </h3>
 
       <div
-        style={
-          window.innerWidth > 768 ? { display: "flex" } : { display: "block" }
-        }
-      >
-        <Treatment />
 
-        <BabyDantist />
+      // style={
+      //   window.innerWidth > 768 ? { display: "flex" } : { display: "block" }
+      // }
+      >
+        <ListService />
+        {/* <Treatment /> */}
+
+        {/* <BabyDantist /> */}
       </div>
     </BoxView>
   );

@@ -16,8 +16,31 @@
   color: var(--accent-color);
 }
 
-.text {
+.link {
+  display: inline-flex;
   margin-top: 0;
   margin-bottom: 10px;
   color: var(--dark-color);
+  text-decoration: none;
 }
+
+.link:hover,
+.link:focus {
+  text-decoration: underline;
+}
+
+.link:hover .text,
+.link:focus .text {
+  color: var(--accent-color);
+}
+
+.activLink {
+  color: var(--accent-color);
+  text-decoration: none;
+}
+
+/* .text {
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: var(--dark-color);
+} */
