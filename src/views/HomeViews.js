@@ -15,25 +15,22 @@ export default function HomeViews({ children }) {
       >
         Стоматологія <span style={{ fontWeight: "700" }}>Аднан Дент</span>
       </h2>
-      <p
-        style={{
-          textAlign: "center",
-          color: "var(--accent-color)",
-        }}
-      >
-        Ми робимо вашу посмішку краще.
-      </p>
+      <p style={{ textAlign: "center" }}>Ми робимо вашу посмішку краще.</p>
 
       <div style={{ marginBottom: "60px" }}>
-        <h4 style={{ textAlign: "center", fontSize: "18px" }}>
-          Наші спеціалісти:
-        </h4>
+        <h4 style={{ textAlign: "center", fontSize: "18px" }}>Спеціалісти:</h4>
+
         <CardTeam />
+
         <LinkGoTo text={"Детальніше"} props={"/team"} />
       </div>
 
       <div>
         <h4 style={{ textAlign: "center", fontSize: "18px" }}>Послуги:</h4>
+        <p>
+          Ми надаємо широкий спектр стоматологічних послуг діагностики та
+          лікування професійного рівня.
+        </p>
 
         <LinkGoTo text={"Детальніше"} props={"/service"} />
       </div>

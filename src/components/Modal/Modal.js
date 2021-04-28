@@ -3,6 +3,7 @@ import s from "./modal.module.css";
 
 export default function Modal({ closeModal, card }) {
   const { url, alt, name, title } = card;
+
   const handleKeyDown = (event) => {
     if (event.code === "Escape") {
       closeModal();
@@ -18,7 +19,7 @@ export default function Modal({ closeModal, card }) {
   useEffect(() => {
     window.addEventListener("keydown", handleKeyDown);
     return () => window.removeEventListener("keydown", handleKeyDown);
-  }, [handleKeyDown]);
+  }, []);
 
   return (
     <div className={s.backdrop} onClick={clickOnBackdrop}>
