@@ -1,8 +1,9 @@
 [
-  { "text": "Терапевтична стоматологія.", "descr": "therapeutic" },
+  { "text": "Дитяча стоматологія.", "descr": "baby" },
+  { "text": "Імплантати.", "descr": "implants" },
+  { "text": "Ендодонтія.", "descr": "endodontics" },
   { "text": "Ортопедична стоматологія.", "descr": "orthopaedist" },
-  { "text": "Стоматологія дитячого віку.", "descr": "baby" },
-  { "text": "Пародонтологія.", "descr": "periodontology" },
   { "text": "Ортодонтія.", "descr": "orthodontics" },
-  { "text": "Профілактика і гігієна.", "descr": "prevention" }
+  { "text": "Профілактика і гігієна.", "descr": "prevention" },
+  { "text": "Терапія.", "descr": "therapeutic" }
 ]

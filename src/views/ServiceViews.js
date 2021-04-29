@@ -4,7 +4,8 @@ import BoxView from "../components/BoxView";
 import ListService from "../components/ListService";
 import PricesTable from "../components/PricesTable";
 
-import periodontology from "../components/Prices/periodontology.json";
+import endodontics from "../components/Prices/endodontics .json";
+import implants from "../components/Prices/implants.json";
 import therapeutic from "../components/Prices/therapeutic.json";
 import orthopaedist from "../components/Prices/orthopaedist.json";
 import babyDantist from "../components/Prices/babyDantist.json";
@@ -23,7 +24,7 @@ export default function ServiceViews() {
           color: "var(--dark-color)",
         }}
       >
-        Перелік усіх послуг:
+        Перелік усіх послуг
       </h3>
 
       <div>
@@ -31,14 +32,15 @@ export default function ServiceViews() {
 
         <Switch>
           <Route path={`${path}/therapeutic`}>
-            <PricesTable
-              title="Терапевтична стоматологія."
-              prices={therapeutic}
-            />
+            <PricesTable title="Терапія." prices={therapeutic} />
           </Route>
 
-          <Route path={`${path}/periodontology`}>
-            <PricesTable title="Пародонтологія." prices={periodontology} />
+          <Route path={`${path}/implants`}>
+            <PricesTable title="Імплантати." prices={implants} />
+          </Route>
+
+          <Route path={`${path}/endodontics`}>
+            <PricesTable title="Ендодонтія." prices={endodontics} />
           </Route>
 
           <Route path={`${path}/orthopaedist`}>
@@ -49,10 +51,7 @@ export default function ServiceViews() {
           </Route>
 
           <Route path={`${path}/baby`}>
-            <PricesTable
-              title="Стоматологія дитячого віку."
-              prices={babyDantist}
-            />
+            <PricesTable title="Дитяча стоматологія." prices={babyDantist} />
           </Route>
 
           <Route path={`${path}/orthodontics`}>

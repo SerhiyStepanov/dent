@@ -17,7 +17,10 @@ export default function PricesTable({ prices, title }) {
           {prices.map((el, index) => (
             <tr key={index} className={s.trow}>
               <td>{el.description}</td>
-              <td>{`${el.price}грн`}</td>
+              <td>
+                {el.price}
+                <span className={s.hrn}>грн</span>
+              </td>
             </tr>
           ))}
         </tbody>
