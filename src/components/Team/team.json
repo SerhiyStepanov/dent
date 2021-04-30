@@ -3,7 +3,7 @@
     "url": "adnan.jpg",
     "alt": "adnan",
     "name": "Adnan",
-    "title": "Dantist implantologist ",
+    "title": "Dantist implantolog",
     "descr": "Лікар імплантолог, терапевт. "
   },
 
@@ -12,14 +12,14 @@
     "alt": "anna",
     "name": "Anna",
     "title": "Baby  dantist",
-    "descr": "Лікар дитячий терапевт."
+    "descr": "Дитячий стоматолог."
   },
 
   {
     "url": "jon.jpg",
     "alt": "jon",
     "name": "Jon",
-    "title": "Orthodontist  ",
+    "title": "Orthodontist",
     "descr": "Лікар ортодантіст."
   }
 ]

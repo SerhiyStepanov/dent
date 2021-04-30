@@ -11,6 +11,7 @@ import orthopaedist from "../components/Prices/orthopaedist.json";
 import babyDantist from "../components/Prices/babyDantist.json";
 import orthodontics from "../components/Prices/orthodontics.json";
 import prevention from "../components/Prices/prevention.json";
+import image from "../images/DSC_5316.jpg";
 
 export default function ServiceViews() {
   const { path } = useRouteMatch();
@@ -27,9 +28,20 @@ export default function ServiceViews() {
         Перелік усіх послуг
       </h3>
 
-      <div>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "space-between",
+        }}
+      >
         <ListService />
 
+        {window.innerWidth > 767 && (
+          <img src={image} alt="image doll" style={{ width: "60%" }} />
+        )}
+      </div>
+
+      <div>
         <Switch>
           <Route path={`${path}/therapeutic`}>
             <PricesTable title="Терапія." prices={therapeutic} />

@@ -12,12 +12,12 @@
 
 @media screen and (min-width: 769px) {
   .thumb {
-    padding: 60px 120px;
+    padding: 60px 90px;
   }
 }
 
 @media screen and (min-width: 1280px) {
   .thumb {
-    padding: 60px 200px;
+    padding: 60px 160px;
   }
 }
