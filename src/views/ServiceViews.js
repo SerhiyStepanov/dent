@@ -11,7 +11,7 @@ import orthopaedist from "../components/Prices/orthopaedist.json";
 import babyDantist from "../components/Prices/babyDantist.json";
 import orthodontics from "../components/Prices/orthodontics.json";
 import prevention from "../components/Prices/prevention.json";
-import image from "../images/DSC_5316.jpg";
+import image from "../images/doll.jpg";
 
 export default function ServiceViews() {
   const { path } = useRouteMatch();
