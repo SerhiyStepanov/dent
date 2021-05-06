@@ -1,13 +1,8 @@
 import s from "./menuButton.module.css";
 
-export default function MenuButton({ onClick, onMouseOver, children }) {
+export default function MenuButton({ onClick, children }) {
   return (
-    <button
-      type="button"
-      onClick={onClick}
-      onMouseOver={onMouseOver}
-      className={s.button}
-    >
+    <button type="button" onClick={onClick} className={s.button}>
       {children}
     </button>
   );

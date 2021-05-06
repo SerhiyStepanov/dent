@@ -37,7 +37,7 @@ export default function ServiceViews() {
         <ListService />
 
         {window.innerWidth > 767 && (
-          <img src={image} alt="image doll" style={{ width: "60%" }} />
+          <img src={image} alt="doll" style={{ width: "60%" }} />
         )}
       </div>
 

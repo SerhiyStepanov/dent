@@ -7,14 +7,14 @@
   border: 6px solid rgb(150, 230, 150);
   background-color: rgb(60, 160, 60);
 
-  transition: border 250ms linear;
+  transition: border 250ms ease;
 }
 
 .thumb:hover,
 .thumb:focus {
   border: 6px solid transparent;
 
-  transition: border 250ms linear;
+  transition: border 250ms ease;
 }
 
 .link {
@@ -32,7 +32,7 @@
   rotate: 270deg;
   fill: var(--light-color);
 
-  animation: phone 1s infinite linear;
+  animation: phone 1500ms infinite linear;
 }
 
 @keyframes phone {

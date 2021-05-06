@@ -39,7 +39,7 @@ b {
   text-decoration: none;
   outline: none;
 
-  transition: color 250ms linear;
+  transition: color 250ms ease;
 }
 
 .link:hover,
@@ -47,7 +47,7 @@ b {
   color: var(--accent-color);
   text-decoration: underline;
 
-  transition: color 250ms linear;
+  transition: color 250ms ease;
 }
 
 .icon {

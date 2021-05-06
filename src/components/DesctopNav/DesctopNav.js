@@ -8,21 +8,11 @@ export default function DesctopNav() {
         Головна
       </NavLink>
 
-      <NavLink
-        exact
-        to="/team"
-        className={s.link}
-        activeClassName={s.activLink}
-      >
+      <NavLink to="/team" className={s.link} activeClassName={s.activLink}>
         Спеціалісти
       </NavLink>
 
-      <NavLink
-        exact
-        to="/service"
-        className={s.link}
-        activeClassName={s.activLink}
-      >
+      <NavLink to="/service" className={s.link} activeClassName={s.activLink}>
         Послуги
       </NavLink>
     </nav>

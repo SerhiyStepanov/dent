@@ -20,11 +20,15 @@
   margin-top: 0;
   margin-bottom: 12px;
   color: var(--dark-color);
+
+  transition: color 250ms ease;
 }
 
 .link:hover,
 .link:focus {
   color: var(--accent-color);
+
+  transition: color 250ms ease;
 }
 
 .activLink {

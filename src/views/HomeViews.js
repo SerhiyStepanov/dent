@@ -26,15 +26,15 @@ export default function HomeViews({ children }) {
       </div>
 
       <div>
+        <p style={{ textAlign: "center" }}>
+          Ми надаємо широкий спектр стоматологічних послуг діагностики та
+          лікування професійного рівня.
+        </p>
         {window.innerWidth > 767 ? (
           <img src={office} alt="office" />
         ) : (
           <img src={officeVertical} alt="office" />
         )}
-        <p style={{ textAlign: "center" }}>
-          Ми надаємо широкий спектр стоматологічних послуг діагностики та
-          лікування професійного рівня.
-        </p>
 
         <LinkGoTo text={"Детальніше"} props={"/service"} />
       </div>

@@ -14,7 +14,7 @@
   background-color: var(--secondary-dark-color);
   color: white;
 
-  transition: background-color 200ms linear, color 200ms linear;
+  transition: background-color 250ms ease, color 250ms ease;
 }
 
 .title {
