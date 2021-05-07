@@ -23,6 +23,7 @@
   list-style: none;
   border-radius: 8px;
   margin-bottom: 30px;
+  overflow: hidden;
   cursor: pointer;
 }
 
@@ -82,6 +83,7 @@
 
   background-color: var(--light-color);
   transform: translateX(-100%);
+
   transition: transform 400ms ease;
 }
 
