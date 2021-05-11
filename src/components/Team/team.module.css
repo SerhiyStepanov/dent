@@ -29,7 +29,7 @@
 
 @media screen and (min-width: 768px) {
   .list {
-    margin: 30px 30px;
+    margin: 30px;
     width: calc((100% - 120px) / 2);
     box-shadow: 6px 6px 12px -3px rgba(45, 46, 47, 0.7);
     -webkit-box-shadow: 6px 6px 12px -3px rgba(45, 46, 47, 0.7);
@@ -39,7 +39,7 @@
 
 @media screen and (min-width: 769px) {
   .list {
-    margin: 30px 30px;
+    margin: 30px;
     width: calc((100% - 180px) / 3);
   }
 }
@@ -63,6 +63,7 @@
   border-bottom-right-radius: 6px;
   padding: 10px 20px;
   overflow: hidden;
+  z-index: -1;
 }
 
 .thumb:hover .overflow,
