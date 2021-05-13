@@ -66,6 +66,7 @@
 
 .link:hover,
 .link:focus {
+  text-decoration: none;
   color: var(--accent-color);
   transition: color 250ms ease;
 }

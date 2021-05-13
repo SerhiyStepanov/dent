@@ -21,6 +21,7 @@
 
 .link:hover,
 .link:focus {
+  text-decoration: none;
   color: var(--dark-color);
   outline: 1px solid var(--accent-color);
 

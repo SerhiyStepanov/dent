@@ -16,10 +16,11 @@
 }
 
 .link {
-  display: inline-flex;
+  display: flex;
   margin-top: 0;
   margin-bottom: 12px;
   color: var(--dark-color);
+  text-decoration: underline;
 
   transition: color 250ms ease;
 }
