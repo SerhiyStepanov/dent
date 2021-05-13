@@ -7,6 +7,7 @@ import DesctopNav from "./components/DesctopNav";
 import ContactsViews from "./views/ContactsViews";
 import ButtonCall from "./components/ButtonCall";
 import HomeViews from "./views/HomeViews";
+import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 
 const TeamViews = lazy(() => import("./views/TeamViews.js"));
