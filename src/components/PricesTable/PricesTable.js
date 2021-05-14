@@ -3,7 +3,7 @@ import s from "./pricesTable.module.css";
 export default function PricesTable({ prices, title }) {
   return (
     <div className={s.wrapper}>
-      <h4 className={s.title}>{title}</h4>
+      <b className={s.title}>{title}</b>
       <p className={s.text}>* - ціни можуть коливатися</p>
       <table className={s.table}>
         <thead>
