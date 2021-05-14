@@ -4,7 +4,7 @@ import Team from "../components/Team";
 export default function TeamViews({ children }) {
   return (
     <BoxView>
-      <h4
+      <h5
         style={{
           textAlign: "center",
           marginTop: "0px",
@@ -13,7 +13,7 @@ export default function TeamViews({ children }) {
         }}
       >
         Спеціалісти
-      </h4>
+      </h5>
 
       <Team />
     </BoxView>

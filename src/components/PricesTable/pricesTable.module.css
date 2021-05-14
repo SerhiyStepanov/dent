@@ -8,6 +8,7 @@
   table-layout: fixed;
   width: 100%;
   border: 1px solid var(--dark-color);
+  border-collapse: separate;
 }
 
 .table .trow:hover {

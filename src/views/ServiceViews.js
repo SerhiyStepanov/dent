@@ -17,7 +17,7 @@ export default function ServiceViews() {
   const { path } = useRouteMatch();
   return (
     <BoxView>
-      <h4
+      <h5
         style={{
           textAlign: "center",
           marginTop: "0px",
@@ -26,7 +26,7 @@ export default function ServiceViews() {
         }}
       >
         Перелік усіх послуг
-      </h4>
+      </h5>
 
       <div
         style={{

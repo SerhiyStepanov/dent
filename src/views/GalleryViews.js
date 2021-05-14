@@ -4,7 +4,7 @@ import Example from "../components/Carousel";
 export default function GalleryViews() {
   return (
     <BoxView>
-      <h4
+      <h5
         style={{
           textAlign: "center",
           marginTop: "0px",
@@ -13,7 +13,7 @@ export default function GalleryViews() {
         }}
       >
         Галерея
-      </h4>
+      </h5>
       <div style={{ marginLeft: "auto", marginRight: "auto" }}>
         <Example />
       </div>
