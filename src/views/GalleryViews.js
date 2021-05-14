@@ -14,7 +14,7 @@ export default function GalleryViews() {
       >
         Галерея
       </h4>
-      <div style={{ width: "380px", marginLeft: "auto", marginRight: "auto" }}>
+      <div style={{ marginLeft: "auto", marginRight: "auto" }}>
         <Example />
       </div>
     </BoxView>

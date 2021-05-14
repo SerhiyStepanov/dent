@@ -1,1 +1,11 @@
+.CarouselThumb {
+  width: 100%;
+}
 
+@media screen and (min-width: 769px) {
+  .CarouselThumb {
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+  }
+}

@@ -10,22 +10,22 @@ import s from "./carousel.module.css";
 
 const items = [
   {
-    src: "gallary1.jpg",
+    src: "gallery1.jpg",
     altText: "",
     caption: "",
   },
   {
-    src: "gallary2.jpg",
+    src: "gallery2.jpg",
     altText: "",
     caption: "",
   },
   {
-    src: "gallary3.jpg",
+    src: "gallery3.jpg",
     altText: "",
     caption: "",
   },
   {
-    src: "gallary4.jpg",
+    src: "gallery4.jpg",
     altText: "",
     caption: "",
   },
@@ -70,23 +70,25 @@ export default function Example(props) {
   });
 
   return (
-    <Carousel activeIndex={activeIndex} next={next} previous={previous}>
-      <CarouselIndicators
-        items={items}
-        activeIndex={activeIndex}
-        onClickHandler={goToIndex}
-      />
-      {slides}
-      <CarouselControl
-        direction="prev"
-        directionText="Previous"
-        onClickHandler={previous}
-      />
-      <CarouselControl
-        direction="next"
-        directionText="Next"
-        onClickHandler={next}
-      />
-    </Carousel>
+    <div className={s.CarouselThumb}>
+      <Carousel activeIndex={activeIndex} next={next} previous={previous}>
+        <CarouselIndicators
+          items={items}
+          activeIndex={activeIndex}
+          onClickHandler={goToIndex}
+        />
+        {slides}
+        <CarouselControl
+          direction="prev"
+          directionText="Previous"
+          onClickHandler={previous}
+        />
+        <CarouselControl
+          direction="next"
+          directionText="Next"
+          onClickHandler={next}
+        />
+      </Carousel>
+    </div>
   );
 }
