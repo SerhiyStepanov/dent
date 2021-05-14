@@ -1,8 +1,8 @@
 import BoxView from "../components/BoxView";
 import LinkGoTo from "../components/LinkGoTo";
 import CardTeam from "../components/CardTeam";
-import office from "../images/office.jpg";
-import officeVertical from "../images/office-1.jpg";
+import imageMobil from "../images/image1.jpg";
+import imageDesctop from "../images/image2.jpg";
 
 export default function HomeViews({ children }) {
   return (
@@ -31,9 +31,9 @@ export default function HomeViews({ children }) {
           лікування професійного рівня.
         </p>
         {window.innerWidth > 767 ? (
-          <img src={office} alt="office" />
+          <img src={imageMobil} alt="dantist" />
         ) : (
-          <img src={officeVertical} alt="office" />
+          <img src={imageDesctop} alt="dantist" />
         )}
 
         <LinkGoTo text={"Детальніше"} props={"/service"} />
