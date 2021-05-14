@@ -6,31 +6,8 @@ import {
   CarouselIndicators,
   CarouselCaption,
 } from "reactstrap";
+import items from "./carousel.json";
 import s from "./carousel.module.css";
-
-const items = [
-  {
-    src: "gallery2.jpg",
-    altText: "",
-    caption: "",
-  },
-  {
-    src: "gallery1.jpg",
-    altText: "",
-    caption: "",
-  },
-
-  {
-    src: "gallery3.jpg",
-    altText: "",
-    caption: "",
-  },
-  {
-    src: "gallery4.jpg",
-    altText: "",
-    caption: "",
-  },
-];
 
 export default function Example(props) {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -62,9 +39,9 @@ export default function Example(props) {
       >
         <img src={item.src} alt={item.altText} className={s.photo} />
         <CarouselCaption
-          //   captionText={item.caption}
+          // captionText={item.caption}
           captionHeader={item.caption}
-          className="text-info"
+          className="text-primary"
         />
       </CarouselItem>
     );
