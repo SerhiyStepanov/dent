@@ -1,8 +1,8 @@
 import BoxView from "../components/BoxView";
 import LinkGoTo from "../components/LinkGoTo";
 import CardTeam from "../components/CardTeam";
-import imageMobil from "../images/image1.jpg";
-import imageDesctop from "../images/image2.jpg";
+import imageMobil from "../images/image2.jpg";
+import imageDesctop from "../images/image1.jpg";
 
 export default function HomeViews({ children }) {
   return (
@@ -25,7 +25,9 @@ export default function HomeViews({ children }) {
         <LinkGoTo text={"Детальніше"} props={"/team"} />
       </div>
 
-      <div>
+      <div
+        style={{ maxWidth: "640px", marginLeft: "auto", marginRight: "auto" }}
+      >
         <p style={{ textAlign: "center" }}>
           Ми надаємо широкий спектр стоматологічних послуг діагностики та
           лікування професійного рівня.

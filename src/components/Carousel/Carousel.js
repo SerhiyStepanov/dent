@@ -10,15 +10,16 @@ import s from "./carousel.module.css";
 
 const items = [
   {
-    src: "gallery1.jpg",
-    altText: "",
-    caption: "",
-  },
-  {
     src: "gallery2.jpg",
     altText: "",
     caption: "",
   },
+  {
+    src: "gallery1.jpg",
+    altText: "",
+    caption: "",
+  },
+
   {
     src: "gallery3.jpg",
     altText: "",
