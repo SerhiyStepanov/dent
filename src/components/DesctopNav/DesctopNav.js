@@ -15,6 +15,10 @@ export default function DesctopNav() {
       <NavLink to="/service" className={s.link} activeClassName={s.activLink}>
         Послуги
       </NavLink>
+
+      <NavLink to="/gallery" className={s.link} activeClassName={s.activLink}>
+        Галерея
+      </NavLink>
     </nav>
   );
 }

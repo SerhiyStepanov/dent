@@ -1,7 +1,7 @@
 import BoxView from "../components/BoxView";
-import Team from "../components/Team";
+import Example from "../components/Carousel";
 
-export default function TeamViews({ children }) {
+export default function GalleryViews() {
   return (
     <BoxView>
       <h4
@@ -12,10 +12,11 @@ export default function TeamViews({ children }) {
           color: "var(--dark-color)",
         }}
       >
-        Спеціалісти
+        Галерея
       </h4>
-
-      <Team />
+      <div style={{ width: "380px", marginLeft: "auto", marginRight: "auto" }}>
+        <Example />
+      </div>
     </BoxView>
   );
 }
