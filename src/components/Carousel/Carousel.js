@@ -9,7 +9,7 @@ import {
 import items from "./carousel.json";
 import s from "./carousel.module.css";
 
-export default function Example(props) {
+export default function Example({ props }, context) {
   const [activeIndex, setActiveIndex] = useState(0);
   const [animating, setAnimating] = useState(false);
 
@@ -39,7 +39,7 @@ export default function Example(props) {
       >
         <img src={item.src} alt={item.altText} className={s.photo} />
         <CarouselCaption
-          // captionText={item.caption}
+          captionText={item.caption}
           captionHeader={item.caption}
           className="text-primary"
         />

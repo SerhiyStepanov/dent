@@ -13,12 +13,11 @@
 @media screen and (min-width: 769px) {
   .iconBox {
     flex-direction: row;
-    align-self: flex-start;
   }
 }
 
 .iconLink {
-  display: inline-flex;
+  display: flex;
   outline: none;
 }
 
@@ -30,7 +29,7 @@
 
 .icon {
   display: flex;
-  padding: 8px;
+  padding: 6px;
   font-size: 44px;
   border-radius: 50%;
   fill: var(--primary-color);

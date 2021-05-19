@@ -17,7 +17,7 @@
   width: 80%;
   height: auto;
   background-color: var(--light-color);
-  border-radius: 6px;
+  border-radius: 8px;
   overflow: hidden;
 }
 
@@ -34,20 +34,20 @@
 }
 
 .thumb {
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
   text-align: center;
   overflow: hidden;
 }
 
 .photo {
   display: block;
-  border-top-left-radius: 6px;
-  border-top-right-radius: 6px;
   overflow: hidden;
 }
 
 .content {
-  border-bottom-left-radius: 6px;
-  border-bottom-right-radius: 6px;
   padding: 10px 20px;
 }
 
