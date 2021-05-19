@@ -1,14 +1,26 @@
 .wrapper {
+  padding: 20px;
+  background-color: Var(--dark-color);
+}
+
+.thumb {
   display: flex;
   flex-direction: column;
-  padding: 30px;
   background-color: Var(--dark-color);
 }
 
 @media screen and (min-width: 768px) {
-  .wrapper {
+  .thumb {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
   }
+}
+
+.text {
+  display: block;
+  margin: 0;
+  font-size: 16px;
+  text-align: center;
+  color: var(--light-color);
 }

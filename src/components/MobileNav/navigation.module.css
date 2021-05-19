@@ -39,7 +39,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
+
   padding-top: 60px;
   width: 100%;
   min-height: 100%;
@@ -54,9 +54,11 @@
 
 .link {
   display: block;
-  padding: 10px;
+  padding: 10px 30px;
   margin-bottom: 20px;
   font-size: 24px;
+  font-weight: 400;
+
   color: var(--dark-color);
   text-decoration: none;
   outline: none;

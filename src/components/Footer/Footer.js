@@ -6,11 +6,20 @@ import Contacts from "../Contacts";
 export default function Footer() {
   return (
     <div className={s.wrapper}>
-      <Contacts />
+      <div className={s.thumb}>
+        <Contacts />
 
-      <WorkSchedule />
+        <WorkSchedule />
 
-      <SocialNetworks />
+        <SocialNetworks />
+      </div>
+
+      <hr
+        style={{
+          backgroundColor: "var(--light-color)",
+        }}
+      ></hr>
+      <p className={s.text}>Copyright © 2021.</p>
     </div>
   );
 }

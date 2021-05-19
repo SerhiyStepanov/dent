@@ -1,9 +1,9 @@
 [
-  { "text": "Дитяча стоматологія.", "descr": "baby" },
-  { "text": "Імплантати.", "descr": "implants" },
-  { "text": "Ендодонтія.", "descr": "endodontics" },
-  { "text": "Ортопедична стоматологія.", "descr": "orthopaedist" },
-  { "text": "Ортодонтія.", "descr": "orthodontics" },
-  { "text": "Профілактика і гігієна.", "descr": "prevention" },
-  { "text": "Терапія.", "descr": "therapeutic" }
+  { "text": "Дитяча стоматологія.", "path": "baby-dantist" },
+  { "text": "Імплантати.", "path": "implants" },
+  { "text": "Ендодонтія.", "path": "endodontics" },
+  { "text": "Ортопедична стоматологія.", "path": "orthopaedist" },
+  { "text": "Ортодонтія.", "path": "orthodontics" },
+  { "text": "Профілактика і гігієна.", "path": "prevention-and-hygiene" },
+  { "text": "Терапія.", "path": "therapeutic" }
 ]

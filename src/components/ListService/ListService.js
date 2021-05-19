@@ -11,7 +11,7 @@ export default function ListService() {
           <li key={index} className={s.listItem}>
             <NavLink
               exact
-              to={`${url}/${el.descr}`}
+              to={`${url}/${el.path}`}
               className={s.link}
               activeClassName={s.activLink}
             >

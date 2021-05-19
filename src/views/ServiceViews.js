@@ -62,7 +62,7 @@ export default function ServiceViews() {
             />
           </Route>
 
-          <Route path={`${path}/baby`}>
+          <Route path={`${path}/baby-dantist`}>
             <PricesTable title="Дитяча стоматологія." prices={babyDantist} />
           </Route>
 
@@ -70,7 +70,7 @@ export default function ServiceViews() {
             <PricesTable title="Ортодонтія." prices={orthodontics} />
           </Route>
 
-          <Route path={`${path}/prevention`}>
+          <Route path={`${path}/prevention-and-hygiene`}>
             <PricesTable title="Профілактика і гігієна." prices={prevention} />
           </Route>
         </Switch>
