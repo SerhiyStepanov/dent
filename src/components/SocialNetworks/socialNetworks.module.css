@@ -35,7 +35,7 @@
   fill: var(--primary-color);
   background-color: var(--secondary-dark-color);
 
-  transition: fill 250ms ease, background-color 250ms ease;
+  transition: fill 250ms linear, background-color 250ms linear;
 }
 
 @media screen and (min-width: 768px) {
@@ -50,5 +50,5 @@
   fill: var(--accent-color);
   background-color: var(--light-color);
 
-  transition: fill 250ms ease, background-color 250ms ease;
+  transition: fill 250ms linear, background-color 250ms linear;
 }

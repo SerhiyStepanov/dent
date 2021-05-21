@@ -8,28 +8,25 @@ export default function SocialNetworks() {
         href="https://www.facebook.com/AdnanDentLviv"
         target="_blank"
         rel="noreferrer"
-        aria-label="facebook"
         className={s.iconLink}
       >
-        <FaFacebookF className={s.icon} />
+        <FaFacebookF className={s.icon} aria-label="facebook" />
       </a>
       <a
         href="https://www.instagram.com/adnan.dent.dentistry/"
         target="_blank"
         rel="noreferrer"
-        aria-label="instagram"
         className={s.iconLink}
       >
-        <FaInstagram className={s.icon} />
+        <FaInstagram className={s.icon} aria-label="instagram" />
       </a>
       <a
         href="https://api.whatsapp.com/send?phone=380676700770"
         target="_blank"
         rel="noreferrer"
-        aria-label="whatsapp"
         className={s.iconLink}
       >
-        <FaWhatsapp className={s.icon} />
+        <FaWhatsapp className={s.icon} aria-label="whatsapp" />
       </a>
     </div>
   );

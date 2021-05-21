@@ -11,11 +11,15 @@
   border-collapse: separate;
 }
 
+.table .trow {
+  transition: background-color 250ms linear, color 250ms linear;
+}
+
 .table .trow:hover {
   background-color: var(--secondary-dark-color);
   color: white;
 
-  transition: background-color 250ms ease, color 250ms ease;
+  transition: background-color 250ms linear, color 250ms linear;
 }
 
 .title {

@@ -78,13 +78,13 @@
   background-color: var(--light-color);
   transform: translateX(-100%);
 
-  transition: transform 400ms ease;
+  transition: transform 400ms linear;
 }
 
 .thumb:hover .overflow,
 .thumb:focus .overflow {
   transform: translateX(0);
-  transition: transform 400ms ease;
+  transition: transform 400ms linear;
 }
 
 .name {

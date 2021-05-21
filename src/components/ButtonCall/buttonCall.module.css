@@ -14,7 +14,7 @@
 .thumb:focus {
   border: 6px solid transparent;
 
-  transition: border 250ms ease;
+  transition: border 250ms linear;
 }
 
 .link {

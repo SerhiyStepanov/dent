@@ -12,6 +12,7 @@ export default function ListService() {
             <NavLink
               exact
               to={`${url}/${el.path}`}
+              href={el.id}
               className={s.link}
               activeClassName={s.activLink}
             >
