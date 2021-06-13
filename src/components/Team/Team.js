@@ -19,9 +19,14 @@ export default function Team() {
     <div>
       <ul className={s.wrapper}>
         {team.map((el, index) => (
-          <li key={index} className={s.list} onClick={() => showModal(el)}>
+          <li key={index} className={s.list}>
             <div className={s.thumb}>
-              <img src={el.url} alt={el.alt} className={s.photo} />
+              <img
+                src={el.url}
+                alt={el.alt}
+                className={s.photo}
+                onClick={() => showModal(el)}
+              />
               <div className={s.content}>
                 <p className={s.name}>{el.name}</p>
                 <p className={s.title}>{el.title}</p>
