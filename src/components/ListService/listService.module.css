@@ -12,14 +12,13 @@
 
 .listItem {
   display: block;
+  margin-bottom: 8px;
   list-style: none;
   color: var(--accent-color);
 }
 
 .link {
   display: inline-flex;
-  margin-top: 0;
-  margin-bottom: 16px;
   color: var(--dark-color);
   text-decoration: underline;
 

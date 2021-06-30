@@ -23,18 +23,27 @@
   color: var(--dark-color);
   text-decoration: none;
   outline: none;
+  border-bottom:solid 3px transparent;
 
-  transition: color 250ms ease;
+  transition: color 250ms linear , border-bottom 250ms linear;
+
 }
 
 .link:hover,
 .link:focus {
   text-decoration: none;
+  outline: none;
   color: var(--accent-color);
-  transition: color 250ms ease;
+  border-bottom:solid 3px  var(--accent-color);
+
+  transition: color 250ms linear , border-bottom 250ms linear;
+
+
 }
 
 .activLink {
   outline: none;
   color: var(--accent-color);
+
+  border-bottom: solid 3px var(--accent-color) ;
 }

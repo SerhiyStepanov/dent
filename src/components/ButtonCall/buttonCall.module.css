@@ -7,7 +7,7 @@
   border: 6px solid rgb(140, 217, 140);
   background-color: rgb(64, 191, 64);
 
-  transition: border 250ms ease;
+  transition: border 250ms linear;
 }
 
 .thumb:hover,

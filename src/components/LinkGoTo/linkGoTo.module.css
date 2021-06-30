@@ -17,7 +17,7 @@
   color: var(--accent-color);
   outline: 1px solid var(--dark-color);
 
-  transition: color 250ms ease, outline 250ms ease;
+  transition: color 250ms linear, outline 250ms linear;
 }
 
 .link:hover,
@@ -26,5 +26,5 @@
   color: var(--dark-color);
   outline: 1px solid var(--accent-color);
 
-  transition: color 250ms ease, outline 250ms ease;
+  transition: color 250ms linear, outline 250ms linear;
 }

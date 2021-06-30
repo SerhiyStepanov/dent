@@ -40,8 +40,8 @@ export default function Example({ props }, context) {
         <img src={item.src} alt={item.altText} className={s.photo} />
         <CarouselCaption
           captionText={item.caption}
-          captionHeader={item.caption}
-          className="text-primary"
+          // captionHeader={item.caption}
+          className={s.caption}
         />
       </CarouselItem>
     );
