@@ -6,9 +6,19 @@ import s from "./navigation.module.css";
 
 export default function Navigation() {
   const [menuIsOpen, setMenuIsOpen] = useState(false);
+  const bodyEl = document.getElementsByTagName("body")[0];
+
+  const menuItemClick = () => {
+    bodyEl.classList.remove("overflow-hidden");
+    setMenuIsOpen(false);
+  };
 
   const menuBtnClick = () => {
     setMenuIsOpen((prevState) => !prevState);
+
+    !menuIsOpen
+      ? bodyEl.classList.add("overflow-hidden")
+      : bodyEl.classList.remove("overflow-hidden");
   };
 
   return (
@@ -29,7 +39,7 @@ export default function Navigation() {
               to="/"
               className={s.link}
               activeClassName={s.activLink}
-              onClick={() => setMenuIsOpen(false)}
+              onClick={() => menuItemClick()}
             >
               Головна
             </NavLink>
@@ -39,7 +49,7 @@ export default function Navigation() {
               to="/team"
               className={s.link}
               activeClassName={s.activLink}
-              onClick={() => setMenuIsOpen(false)}
+              onClick={() => menuItemClick()}
             >
               Спеціалісти
             </NavLink>
@@ -49,7 +59,7 @@ export default function Navigation() {
               to="/service"
               className={s.link}
               activeClassName={s.activLink}
-              onClick={() => setMenuIsOpen(false)}
+              onClick={() => menuItemClick()}
             >
               Послуги
             </NavLink>
