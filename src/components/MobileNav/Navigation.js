@@ -6,7 +6,7 @@ import s from "./navigation.module.css";
 
 export default function Navigation() {
   const [menuIsOpen, setMenuIsOpen] = useState(false);
-  const bodyEl = document.getElementsByTagName("body")[0];
+  const bodyEl = document.querySelector("body");
 
   const menuItemClick = () => {
     bodyEl.classList.remove("overflow-hidden");
